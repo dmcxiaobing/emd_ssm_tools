@@ -210,7 +210,7 @@
 			<!-- /.row -->
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<form class="form-inline" action="${pageContext.request.contextPath }/customer/list.action" method="get">
+					<form class="form-inline" action="${pageContext.request.contextPath }/demo1/customer/list.action" method="get">
 						<div class="form-group">
 							<label for="customerName">客户名称</label> 
 							<input type="text" class="form-control" id="customerName" value="${custName }" name="custName">
@@ -283,7 +283,7 @@
 							</tbody>
 						</table>
 						<div class="col-md-12 text-right">
-							<itcast:page url="${pageContext.request.contextPath }/customer/list.action" />
+							<itcast:page url="${pageContext.request.contextPath }/demo1/customer/list.action" />
 						</div>
 						<!-- /.panel-body -->
 					</div>
@@ -409,7 +409,7 @@
 		function editCustomer(id) {
 			$.ajax({
 				type:"get",
-				url:"<%=basePath%>customer/detail.action",
+				url:"<%=basePath%>demo1/customer/detail.action",
 				data:{"id":id},
 				success:function(data) {
 					$("#edit_cust_id").val(data.cust_id);
@@ -427,7 +427,7 @@
 			});
 		}
 		function updateCustomer() {
-			$.post("<%=basePath%>customer/update.action",$("#edit_customer_form").serialize(),function(data){
+			$.post("<%=basePath%>demo1/customer/update.action",$("#edit_customer_form").serialize(),function(data){
 				alert("客户信息更新成功！");
 				window.location.reload();
 			});
@@ -435,7 +435,7 @@
 		
 		function deleteCustomer(id) {
 			if(confirm('确实要删除该客户吗?')) {
-				$.post("<%=basePath%>customer/delete.action",{"id":id},function(data){
+				$.post("<%=basePath%>demo1/customer/delete.action",{"id":id},function(data){
 					alert("客户删除更新成功！");
 					window.location.reload();
 				});

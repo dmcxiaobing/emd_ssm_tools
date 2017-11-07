@@ -56,12 +56,12 @@ public class CustomerController {
 		// 查询出客户的级别 种类
 		List<BaseDict> levelList = customerService.findDictByCode(level);
 		
-		if (vo.getCustName()!=null && !vo.getCustName().equals("")) {
+		if (vo.getCustName()!=null ) {
 			//证明输入的查询的名称，这里进行一下转码
 			vo.setCustName(new String(vo.getCustName().getBytes("iso8859-1"), "utf-8"));
 		}
 		
-		if (vo.getPage() == null||vo.getPage().equals("")) {
+		if (vo.getPage() == null) {
 			//设置从第一页开始查询
 			vo.setPage(1);
 		}
@@ -82,7 +82,7 @@ public class CustomerController {
 		model.addAttribute("fromType",sourceList);
 		model.addAttribute("industryType",industryList);
 		model.addAttribute("levelType",levelList);
-		//高级查询选中数据回显
+		//高级查询选中数据回显.列表中显示的数据
 		model.addAttribute("custName",vo.getCustName());
 		model.addAttribute("custSource", vo.getCustSource());
 		model.addAttribute("custIndustry", vo.getCustIndustry());
