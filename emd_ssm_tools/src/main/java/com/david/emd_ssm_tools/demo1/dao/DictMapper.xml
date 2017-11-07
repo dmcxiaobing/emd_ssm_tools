@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.david.emd_ssm_tools.demo1.dao.DictMapper">
+	<select id="findDictByCode" parameterType="string"
+		resultType="com.david.emd_ssm_tools.demo1.pojo.BaseDict">
+		select * from base_dict a where a.dict_enable=1 and
+		a.dict_type_code=#{code} order by a.dict_sort
+	</select>
+
+</mapper>
