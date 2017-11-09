@@ -412,6 +412,7 @@
 				url:"<%=basePath%>demo1/customer/detail.action",
 				data:{"id":id},
 				success:function(data) {
+					alert(data)
 					$("#edit_cust_id").val(data.cust_id);
 					$("#edit_customerName").val(data.cust_name);
 					$("#edit_customerFrom").val(data.cust_source)

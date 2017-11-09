@@ -14,4 +14,11 @@ public interface CustomerService {
 
 	Integer findCustomerByVoCount(QueryVo vo);
 
+	Customer findCustomerById(Long id);
+
+	void deleteCustomerById(Long id);
+
+	void updateCustomerById(Customer customer);
+
+
 }
