@@ -1,0 +1,9 @@
+
+*.prefs
+emd_ssm_solrjd/.settings/org.eclipse.wst.jsdt.ui.superType.container
+emd_ssm_solrjd/.settings/org.eclipse.wst.common.component
+emd_ssm_solrjd/.classpath
+emd_ssm_solrjd/.settings/org.eclipse.wst.jsdt.ui.superType.name
+emd_ssm_solrjd/.project
+emd_ssm_solrjd/.settings/org.eclipse.wst.common.project.facet.core.xml
+emd_ssm_solrjd/.settings/.jsdtscope
