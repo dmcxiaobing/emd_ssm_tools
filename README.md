@@ -1,8 +1,8 @@
-##maven构建的springmvc,spring,mybatis的一些学习小案例。
+## maven构建的springmvc,spring,mybatis的一些学习小案例。
 
-* ###emd_ssm_solrjd是一个利用solr搭建的搜索小系统。
+* ### emd_ssm_solrjd是一个利用solr搭建的搜索小系统。
 
-* ###emd_ssm_tools是一个多表的增删改查功能，带有字典表。
+* ### emd_ssm_tools是一个多表的增删改查功能，带有字典表。
 
 > 部分资源来自互联网收集，并修改，归原作者所有，感谢。
 
